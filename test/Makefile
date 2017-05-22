@@ -65,6 +65,12 @@ run_benchmark_test:
 	python3 $(SCRIPT) -run_directory $(RUN_DIR) -run_file BENCHMARK_7_SC_cc_net_nmf_parallel_shared.yml
 
 # ----------------------------------------------------------------
+# - VERIFICATION TESTS RUN SECTION                               -
+# ----------------------------------------------------------------
+verification_tests:
+	python3 ./integration/verify_benchmarks.py
+
+# ----------------------------------------------------------------
 # - CLEAN UP SECTION                                             -
 # ----------------------------------------------------------------	
 unit_test_cleanup:
